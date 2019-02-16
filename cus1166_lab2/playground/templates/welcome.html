@@ -1,0 +1,14 @@
+
+
+
+
+#Importing Flask class from the flask module
+from flask import Flask
+# Create an instance of Flask class
+app = Flask(__name__)
+# Define a route
+@app.route("/")
+def index():
+return "Hello World!!!"
+if __name__ == "__main__":
+app.run()
